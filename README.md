@@ -1,7 +1,7 @@
 # Coleta Senac
 
 ## Descrição
-Este projeto é parte de um trabalho acadêmico realizado no âmbito do curso de [Nome do Curso] no [Nome da Instituição]. O objetivo é desenvolver um aplicativo que aborde questões relacionadas à coleta e reciclagem de resíduos.
+Este projeto é parte de um trabalho acadêmico realizado no âmbito do curso de Análise e Desenvolvimetno de Sistemas no Senac Rio. O objetivo é desenvolver um aplicativo que aborde questões relacionadas à coleta e reciclagem de resíduos.
 
 ## Tecnologias e Bibliotecas Utilizadas
 
