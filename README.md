@@ -1,4 +1,4 @@
-# ProjetoIntegradorColeta
+# Coleta Senac
 
 - Libs
   - Native Base
