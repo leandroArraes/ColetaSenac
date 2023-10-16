@@ -1,20 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
-// import  LoginScreen from './src/login/view/LoginScreen';
-import LoginView from './src/login/LoginView';
-//import LoginScreen from './LoginScreen';
+import { Container, Header, Content, Button } from 'native-base';
+import LoginView from './src/Usuario/login/LoginView';
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ImageBackground
-            // source={require('./assets/background.png')} // Substitua pelo caminho da sua imagem de fundo
-            style={styles.container}>
-      {/* <LoginScreen/> */}
-      <LoginView/>
-    </ImageBackground>
       
+      <ImageBackground    source={require('./assets/bg.png')} style={styles.backgroundImage}>
+
+       <LoginView/>
+      
+      </ImageBackground>
+
     </View>
+
   );
 }
 
@@ -26,4 +28,10 @@ const styles = StyleSheet.create({
     width:'100%',
     backgroundColor:'#F9EBD1'
   },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover', // ou 'contain' para ajustar a imagem de fundo
+    width: '100%',
+    height: '100%',
+  }
 });

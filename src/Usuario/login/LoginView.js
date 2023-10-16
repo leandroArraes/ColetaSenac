@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet,Image } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import tes from './LoginCss'
+import tw from 'twrnc';
+import {  Box, Center, NativeBaseProvider,Input } from "native-base";
 
-
-const LoginView = () => {
+function LoginView ()  {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,11 +16,14 @@ const LoginView = () => {
     <View style={styles.container}>
         <View style={styles.divLogo}>
             <Image
-            source={require('./../../assets/logoFinal.png')} 
+            source={require('./../../../assets/logoFinal.png')} 
             style={styles.logo}/>
         </View>
          
        <View  style={styles.divInput}>
+
+
+  
             <TextInput
                 placeholder="catador@coleta.com.br"
                 value={email}
@@ -35,9 +38,21 @@ const LoginView = () => {
                 secureTextEntry
                 style={styles.input}
             />
-            <Button title="Entrar" onPress={handleLogin} />
-            <Text style={styles.title}>Ainda não e Cadastrado?</Text>
+     
+        
+            <Button
+              title="Entrar"
+              onPress={handleLogin}
+              color="#2B463C"
+              style={{
+                width: '100%', 
+                height: 50, 
+                borderRadius: 10, 
+              }}
+            />
 
+            <Text style={styles.title}>Ainda não e Cadastrado?</Text>
+            
        </View>      
       
       
@@ -59,12 +74,13 @@ const styles = StyleSheet.create({
   input: {
     width: 280,
     height: 45,
-    borderColor: 'white',
-    borderWidth: 3,
+    borderColor: '2B463C',
+    borderWidth: 1,
     marginBottom: 10,
     padding: 10,
-    borderRadius:6,
-    color: 'white'
+    borderRadius:8,
+    color: 'white',
+    backgroundColor:'white'
     
   },
   divLogo:{
@@ -86,7 +102,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width:'100%',
-  }
+  },
+  btn:{
+  width:350,
+  backgroundColor:'#2B463C'
+}
 });
 
 export default LoginView;
