@@ -39,7 +39,7 @@ function LoginView ()  {
                 style={styles.input}
             />
      
-        
+
             <Button
               title="Entrar"
               onPress={handleLogin}
@@ -49,7 +49,16 @@ function LoginView ()  {
                 height: 50, 
                 borderRadius: 10, 
               }}
+
+              
             />
+            <TouchableHighlight
+              style={styles.button}
+              underlayColor="#C0C0C0" // Cor quando pressionado
+              onPress={handlePress}
+            >
+        <Text style={styles.buttonText}>Pressione-me</Text>
+      </TouchableHighlight>
 
             <Text style={styles.title}>Ainda não e Cadastrado?</Text>
             
