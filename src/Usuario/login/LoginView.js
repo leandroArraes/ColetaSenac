@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet,Image } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet,Image,TouchableHighlight  } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import tw from 'twrnc';
-import {  Box, Center, NativeBaseProvider,Input } from "native-base";
+
 
 function LoginView ()  {
   const [email, setEmail] = useState('');
@@ -21,15 +21,11 @@ function LoginView ()  {
         </View>
          
        <View  style={styles.divInput}>
-
-
-  
             <TextInput
                 placeholder="catador@coleta.com.br"
                 value={email}
                 onChangeText={setEmail}
-                style={styles.input}
-                
+                style={styles.input}    
             />
             <TextInput
                 placeholder="Digite sua senha"
@@ -44,22 +40,9 @@ function LoginView ()  {
               title="Entrar"
               onPress={handleLogin}
               color="#2B463C"
-              style={{
-                width: '100%', 
-                height: 50, 
-                borderRadius: 10, 
-              }}
-
-              
+             
             />
-            <TouchableHighlight
-              style={styles.button}
-              underlayColor="#C0C0C0" // Cor quando pressionado
-              onPress={handlePress}
-            >
-        <Text style={styles.buttonText}>Pressione-me</Text>
-      </TouchableHighlight>
-
+        
             <Text style={styles.title}>Ainda não e Cadastrado?</Text>
             
        </View>      
