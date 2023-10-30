@@ -4,6 +4,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import tw from 'twrnc';
 
 
+
 function LoginView ()  {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -34,8 +35,15 @@ function LoginView ()  {
                 secureTextEntry
                 style={styles.input}
             />
-     
 
+            
+     
+       
+      <View>
+        
+      
+      </View>
+      
             <Button
               title="Entrar"
               onPress={handleLogin}

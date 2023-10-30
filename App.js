@@ -1,8 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
-import { Container, Header, Content, Button } from 'native-base';
 import LoginView from './src/Usuario/login/LoginView';
-import Gluestak from './src/Components/Exemples/GlueStack/Gluestak';
+
 
 
 
@@ -13,8 +12,8 @@ export default function App() {
       
       <ImageBackground    source={require('./assets/bg.png')} style={styles.backgroundImage}>
 
-       {/* <LoginView/> */}
-       <Gluestak />
+       <LoginView/>
+   
       
       </ImageBackground>
 
