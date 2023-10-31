@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 import LoginView from './src/Usuario/login/LoginView';
+import Page from './src/Usuario/login/Page';
 
 
 
@@ -13,6 +14,7 @@ export default function App() {
       <ImageBackground    source={require('./assets/bg.png')} style={styles.backgroundImage}>
 
        <LoginView/>
+      
    
       
       </ImageBackground>
