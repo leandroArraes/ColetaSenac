@@ -20,4 +20,4 @@ Antes de executar o projeto, certifique-se de ter as dependências instaladas. U
 
 ```bash
 npm install
-npm start
+npx expo start
