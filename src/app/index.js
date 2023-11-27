@@ -32,7 +32,7 @@ export default function Page() {
           <Text style={tw`text-center font-bold text-1xl flex`}> Tipo de Material  </Text>
 
             <View style={tw`flex`}>
-            <Image style={{ width: 40, height: 40 }} source={require("../../assets/camera.png")} />
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/papel.png")} />
             <Text style={tw`text-center font-bold flex`}> Papel</Text>
             </View>
             
