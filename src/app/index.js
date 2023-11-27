@@ -4,6 +4,7 @@ import { StyleSheet, Text, View,ImageBackground ,TextInput,Button} from "react-n
 import MeuBotao from "../components/Meubotao";
 import tw from 'twrnc';
 import {  Image, RadioGroup } from "react-native";
+import { RadioButton } from 'react-native-paper';
 
 export default function Page() {
   const [material, setMaterial] = useState("papel");
@@ -33,6 +34,49 @@ export default function Page() {
             <View style={tw`flex`}>
             <Image style={{ width: 40, height: 40 }} source={require("../../assets/camera.png")} />
             <Text style={tw`text-center font-bold flex`}> Papel</Text>
+            </View>
+            
+            <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/metal.png")} />
+            <Text style={tw`text-center font-bold flex`}> metal </Text>
+            </View>
+            
+            <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/tetrapak.png")} />
+            <Text style={tw`text-center font-bold flex`}> tetra pak </Text>
+            </View>
+
+             <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/vidro.png")} />
+            <Text style={tw`text-center font-bold flex`}> vidro </Text>
+            </View>
+
+             <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/movel.png")} />
+            <Text style={tw`text-center font-bold flex`}> movel </Text>
+            </View>
+
+            <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/pilha.png")} />
+            <Text style={tw`text-center font-bold flex`}> pilha </Text>
+            </View>
+
+            <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/eletro.png")} />
+            <Text style={tw`text-center font-bold flex`}> eletrônico </Text>
+            </View>
+
+            <View style={tw`flex`}>
+            <Image style={{ width: 40, height: 40 }} source={require("../../assets/outro.png")} />
+            <Text style={tw`text-center font-bold flex`}> outro </Text>
+
+             <Text style={tw`text-center font-bold text-2xl`}>
+              Condição do material
+              <RadioButton value="Boa" />
+              <RadioButton value="Ruim" />
+            </Text> 
+
+            
             </View>
             
         </View>
