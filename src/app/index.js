@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { StyleSheet, Text, View, ImageBackground, TextInput, Button } from "react-native";
+import { StyleSheet, Text, View, ImageBackground, TextInput, Button,FlatList } from "react-native";
 import MeuBotao from "../components/Meubotao";
 import tw from 'twrnc';
 import { Image, RadioGroup } from "react-native";
@@ -30,54 +30,54 @@ export default function Page() {
           <View style={tw`w-90 bg-gray-200 h-100 rounded-lg`}>
             <Text style={tw`text-center font-bold text-2xl flex`}> Tipo de Material  </Text>
 
-            <View style={tw`text-center font-bold text-2xl flex`}>
+            <View style={tw`flex grid-cols-3 w-100`}>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/papel.png")} />
-              <Text style={tw`text-center font-bold flex`}> Papel</Text>
-            </View>
+              <View style={tw`flex justify-center items-center bg-gray-300 w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/papel.png")} />
+                <Text style={tw`text-center font-bold flex`}> Papel</Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/plastico.png")} />
-              <Text style={tw`text-center font-bold flex`}> Plastico </Text>
-            </View>
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/metal.png")} />
-              <Text style={tw`text-center font-bold flex`}> Plastico </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/plastico.png")} />
+                <Text style={tw`text-center font-bold flex`}> Plastico </Text>
+              </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/metal.png")} />
+                <Text style={tw`text-center font-bold flex`}> Plastico </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/tetra.png")} />
-              <Text style={tw`text-center font-bold flex`}> tetra pak </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/tetra.png")} />
+                <Text style={tw`text-center font-bold flex`}> tetra pak </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/vidro.png")} />
-              <Text style={tw`text-center font-bold flex`}> vidro </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/vidro.png")} />
+                <Text style={tw`text-center font-bold flex`}> vidro </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/movel.png")} />
-              <Text style={tw`text-center font-bold flex`}> movel </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/movel.png")} />
+                <Text style={tw`text-center font-bold flex`}> movel </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/bateria.png")} />
-              <Text style={tw`text-center font-bold flex`}> pilha </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/bateria.png")} />
+                <Text style={tw`text-center font-bold flex`}> pilha </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/eletronico.png")} />
-              <Text style={tw`text-center font-bold flex`}> eletrônico </Text>
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/eletronico.png")} />
+                <Text style={tw`text-center font-bold flex`}> eletrônico </Text>
+              </View>
 
-            <View style={tw`flex justify-center items-center`}>
-              <Image style={{ width: 40, height: 40 }} source={require("../../assets/outro.png")} />
-              <Text style={tw`text-center font-bold flex`}> outro </Text>   
-            </View>
+              <View style={tw`flex justify-center items-center w-20`}>
+                <Image style={{ width: 40, height: 40 }} source={require("../../assets/outro.png")} />
+                <Text style={tw`text-center font-bold flex`}> outro </Text>
+              </View>
             </View>
             <View>
-            <Text style={tw`text-center font-bold text-2xl`}>
+              <Text style={tw`text-center font-bold text-2xl`}>
                 Condição do material
                 <RadioButton value="Boa" />
                 <RadioButton value="Ruim" />
