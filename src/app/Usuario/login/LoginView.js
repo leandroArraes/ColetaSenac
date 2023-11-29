@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet,Image,TouchableHighlight  } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import tw from 'twrnc';
-
+import { Link } from 'expo-router';
 
 
 function LoginView ()  {
@@ -17,7 +17,7 @@ function LoginView ()  {
     <View style={styles.container}>
         <View style={styles.divLogo}>
             <Image
-            source={require('./../../../assets/logoFinal.png')} 
+            source={require('./../../../../assets/logoFinal.png')} 
             style={styles.logo}/>
         </View>
          
